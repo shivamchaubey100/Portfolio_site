@@ -16,9 +16,20 @@ header {
 }
 
 /* Editing the navigation tab */
+
+nav{
+    background-color: whitesmoke;   /* Adding a background strip */
+    position: fixed;
+    top: -10px;
+    height: 60px;
+    width: 105%;
+    margin-left: -10px;
+    z-index: 10001;
+}
+
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 30px;
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -55,10 +66,10 @@ nav a:hover {
         display: block;
         margin: 5px 0;
     }
-    .hobbies-container {
+    /* .hobbies-container {
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     .hobby-card {
         width: calc(100% - 20px);
