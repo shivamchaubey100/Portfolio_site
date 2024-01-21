@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--linking my css file -->
+    <title>Shivam Chaubey - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" />    <!--using fullpage.js library to create full page scrolling webpage-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.extensions.min.js"></script>
+    <script src="script.js"></script>   <!--linking my js file -->
+</head>
+<body>    
+    <header>
+        <nav>               <!--Adding navigation menu-->
+            <ul id="menu">
+                <li data-menuanchor="home"><a href="#home">Home</a></li>
+                <li data-menuanchor="about"><a href="#about">About</a></li>
+                <li data-menuanchor="hobbies"><a href="#hobbies">Hobbies</a></li>
+                <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="fullpage">
+        <div class="section" id="background" data-anchor="home">   <!--Creating a section for home-->
+            <div class="bg">
+                <div id="photo">
+                    <img src="images/picture.png" alt="photo">  <!--Adding my photo-->
+                </div>
+                <div class="animation-bg">
+                    <h1>Shivam Chaubey</h1>                   
+                </div>
+                <p class="description">
+                    Hello and welcome to my webpage! I'm Shivam Chaubey, a first-year electrical engineering student with a passion for coding and web development. Join me on this digital journey as I share my enthusiasm for technology and showcase my evolving skills in the world of programming and web design.                
+                </p>
+            </div>            
+        </div>
+        
+        <div class="section" data-anchor="about">           <!--Creating a section for about-->
+            <h2>Welcome to My Portfolio</h2>
+            <p>
+                Hello there! I am Shivam Chaubey, a passionate and driven individual hailing from the spiritual and culturally rich city of Varanasi. Currently, I am navigating through the exciting realm of Electrical Engineering as a first-year student, eagerly absorbing the intricacies of this dynamic field.
+            </p>
+            <p>
+                My journey in the world of technology has been nothing short of exhilarating. With a keen interest in coding and web development, I find solace in the intricate dance between lines of code and the limitless possibilities they unlock. From the elegant simplicity of algorithms to the visually stunning world of web design, I am on a mission to unravel the mysteries of the digital landscape.
+            </p><p>
+                As a first-year student, I am not just confined to textbooks and lectures; I strive to bridge the gap between theoretical knowledge and practical application. Through hands-on projects and collaborative endeavors, I am honing my skills to become a proficient problem solver in the realm of electrical engineering.
+            </p><p>
+                Beyond the realm of academia, I am a firm believer in the power of continuous learning. Whether it's exploring new coding languages, delving into the latest web development trends, or participating in coding competitions, I relish the opportunity to expand my knowledge and stay on the cutting edge of technology.
+            </p><p>
+                Varanasi, with its timeless traditions and vibrant atmosphere, serves as the backdrop to my academic pursuits. The city's rich cultural heritage inspires me to approach challenges with creativity and resilience, mirroring the spirit of this ancient city.
+            </p><p>
+                As I navigate through my first year in electrical engineering, I am excited about the journey ahead. With a mindset fueled by curiosity and a heart set on innovation, I look forward to making meaningful contributions to the world of technology while leaving a positive impact on the community around me.
+            </p><p>
+                Join me on this adventure of growth, exploration, and endless possibilities as I carve my path in the fascinating intersection of electrical engineering, coding, and web development. The best is yet to come! 🚀✨</p>
+            </div>
+
+        <div class="section" data-anchor="hobbies">         <!--Creating a section for hobbies-->
+            <h2>Hobbies</h2>
+            <div class="hobbies-container">
+                <div class="hobby-card" onclick="location.href='hobbies/hobby1.html';"> <!--linking it to hobby1 page-->
+                    <img src="images/hobby1.jpg" alt="Hobby 1 Image">       <!--Hobby1 image-->
+                    <h3>Coding</h3>
+                    <p>Coding is not just a hobby for me; it's a thrilling journey into the....</p>
+                </div>
+
+                <div class="hobby-card" onclick="location.href='hobbies/hobby2.html';"> <!--linking it to hobby2 page-->
+                    <img src="images/hobby2.jpeg" alt="Hobby 2 Image">      <!--Hobby2 image-->
+                    <h3>Chess</h3>
+                    <p>Chess is not just a game for me; it's a captivating journey of....</p>
+                </div>
+
+                <div class="hobby-card" onclick="location.href='hobbies/hobby3.html';"> <!--linking it to hobby3 page-->
+                    <img src="images/hobby3.jpeg" alt="Hobby 3 Image">      <!--Hobby3 image-->
+                    <h3>Reading</h3>
+                    <p>Immersing myself in the world of literature is not just a pastime for me - it's a....</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section" data-anchor="contact">         <!--Creating a section for contact-->
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="button" id="sendMessage">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
