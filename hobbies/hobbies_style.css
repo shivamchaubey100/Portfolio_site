@@ -26,15 +26,16 @@ body {
 
 h1 {
     text-align: center;
-    color: #007bff; /* Blue color for the header */
+    color: #bc0755; /* Blue color for the header */
     background: linear-gradient(45deg, #007bff, #00ffcc); /* Gradient background */
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    /* color: transparent; */
 }
 
 p {
     margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .container {
@@ -113,4 +114,15 @@ p {
     100% {
         transform: translateX(1);
     }
+}
+
+.quotes-section {
+    margin: 10px 0;
+}
+
+.quotes-section blockquote {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: #0c04ef;
 }
