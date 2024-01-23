@@ -189,7 +189,7 @@ body, html {
 }
 
 /* Apply background visual effects i.e. animation, gradient... to the home section */
-#background{
+/* #background{
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
@@ -209,6 +209,19 @@ body, html {
     100% {
         background-position: 0% 0%;
     }
+} */
+
+#background{
+    background-image: url(images/background1.avif);
+    background-size: cover;
+
+}
+.animation-bg h1{
+    color: beige;
+}
+
+.description{
+    color: beige;
 }
 
 /* Adjust image to the webpage */
