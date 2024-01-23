@@ -144,10 +144,16 @@ body, html {
 #contactForm {
     background-color: #6a6868;
     padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+
+    /* Center the form in the middle of the page */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 #contactForm label {
-    display: flex;
+    display: block; 
     margin-bottom: 8px;
     font-weight: bold;
 }
@@ -163,7 +169,7 @@ body, html {
 }
 
 #contactForm textarea {
-    resize: vertical; 
+    resize: vertical;
 }
 
 #contactForm button {
@@ -183,10 +189,11 @@ body, html {
 
 /* To make contact form responsive */
 @media (max-width: 600px) {
-    #contactForm form {
-        width: 90%;
+    #contactForm {
+        padding: 15px; /* padding for smaller screens */
     }
 }
+
 
 /* Apply background visual effects i.e. animation, gradient... to the home section */
 /* #background{
