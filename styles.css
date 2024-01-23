@@ -218,23 +218,49 @@ body, html {
     }
 } */
 
-#background{
-    background-image: url(images/background1.avif);
+#background {
     background-size: cover;
-
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    animation: changeBackground 15s ease infinite;
 }
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('images/wallpaper1.avif');
+    }
+    33% {
+        background-image: url('images/wallpaper2.avif');
+    }
+    66% {
+        background-image: url('images/wallpaper3.avif');
+    }
+    100% {
+        background-image: url('images/wallpaper1.avif');
+    }
+}
+
 .animation-bg h1{
-    color: beige;
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
 }
 
 .description{
-    color: beige;
+    font-size: 1.4em; 
+    margin-bottom: 30px; 
 }
 
 /* Adjust image to the webpage */
 #photo {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 #photo img {
