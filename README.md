@@ -25,13 +25,13 @@ To run the code locally, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/shivamchaubey100/DevCom_PS1.git
+   git clone https://github.com/shivamchaubey100/Portfolio_site.git
    ```
 
 2. Open the cloned folder:
 
    ```bash
-   cd DevCom_PS1
+   cd Portfolio_site
    ```
 
 3. Open the `homepage.html` file in a web browser of your choice.
